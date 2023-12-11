@@ -5,21 +5,27 @@
 #                                                     +:+ +:+         +:+      #
 #    By: lsaumon <lsaumon@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/27 10:22:45 by lsaumon           #+#    #+#              #
-#    Updated: 2023/11/27 10:23:20 by lsaumon          ###   ########.fr        #
+#    Created: 2023/12/11 12:54:16 by lsaumon           #+#    #+#              #
+#    Updated: 2023/12/11 13:08:48 by lsaumon          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+INCLUDES = -I/usr/solong/MLX42/include/MLX42 -Imlx
 
-SRCS =
+SRCS =	so_long_win.c \
+		
 
 OBJS =	${SRCS:.c=.o}
 
 CC =	cc
+
 CFLAGS =	-Wall -Wextra -Werror
+
 RM =	rm -f
+
 AR =	ar rcs
-NAME =
+
+NAME =	so_long
 
 all:	${NAME}
 
